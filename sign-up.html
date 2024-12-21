@@ -7,51 +7,37 @@
     <link rel="icon" href="assets/icon.png" type="image/x-icon"/>
 </head>
 <body>
-    <h1>sign up</h1>
-    
-    <p>Create an account or <a href="login.html">Sign in</a></p>
-    <form>
-      
-        <label>Email address:</label>
-  
-        <input type="text" name="Email" placeholder="Type your email address" />
-  <br>
-  <br>
-  <br>
+   
+    <form action="sign_in.html" method="get">
+          
+        <!-- Email Input -->
+          <label for="email">Email address</label><br>
+          <input type="email" id="email"  required><br><br>
         
-  
-        <label>User name:</label>
-  
-        <input type="text" name="User name" placeholder="User name" />
-  
-  <br>
-  <br>
-  <br>
-        <label>Password:</label>
-  
-        <input type="password" name="number" value="23123456" />
-
-<br>
-<br>
-<br>
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<p>I do not want to receive email with advertising new, seggestions or marketing promotion</p>
-
-</textarea>
-<br>
-<br>
-
-
-      <input type="submit" value="sigin">
-    
-
-
- 
-    
-  <p>by siging up to create an account, you are acceppting our terms of services and privacy policy</p>
-
-    
-
+          <!-- Name Input -->
+         
+          <label for="username">Username</label><br>
+          <input type="text" id="username" pattern="[A-Za-z\s]+" required><br><br>
+          
+          <!-- password Input -->
+         
+          <label for="password">Password</label><br>
+          <input type="password" id="password" pattern="[0-9]+" required><br>
+          <small>Your password must contain only numbers.</small><br><br><br><br>
+          
+          <!-- checkbox Input -->
+          
+          <input type="checkbox" id="no-emails">
+          <label for="no-emails">I do not want to receive emails with advertising, news, suggestions or marketing promotions</label><br><br>
+          
+      <!-- Submit Button -->
+             
+      <button type="submit"> Sign up</button>
+    </form>
+    <hr/>
+    <hr/>
+    <p> <h6>By signing up to create an account, you are accepting our terms of service and privacy policy</h6></p>
+</center>
 
     
 </body>
